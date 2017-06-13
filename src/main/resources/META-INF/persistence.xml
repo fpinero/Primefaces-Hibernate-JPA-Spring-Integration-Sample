@@ -14,3 +14,13 @@
 		</properties>
 	</persistence-unit>
 </persistence>
+
+
+					<!-- Persistence unit should define: -->
+
+<!--     Persistence unit name. That name will be referenced by Spring context. -->
+
+<!--     Transaction type – JPA implementation have the choice of managing the resource 
+			by itself (RESOURCE_LOCAL) or having them managed by the application server’s JTA implementation. -->
+
+<!--     Information about database connection. -->

@@ -9,6 +9,16 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 @Entity
 public class Employee {
+	
+	//JPA provides @Entity which will be used for indicating Employee as a persistent domain class. 
+	//Default mapping would be happening in order to map this persistent entity with its Employee 
+	//Table. In case you’ve provided Table name or class name that aren’t identical, @Table must be used.
+
+	//@Id annotation used for indicating identity of a given Employee instance. Because of discrepancies between attribute name and column name, @column must be provided.
+
+	//@Column name annotation takes a parameter of mapped column name.
+	
+	
 	@Id
 	@Column(name="EMP_ID")
 	private long employeeId;

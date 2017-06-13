@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
+   <!--  JPA require an entityManagerFactory object which is an instance of org.springframework.orm.jpa.LocalEntityFactoryBean. 
+   		This instance must be provided with the name of persistenceUnit and a JPAVendorAdapter.
+    
+    To use @Trasnactional annotation properly, TransactionManager should be defined.
+    
+    Default name and location for Spring context configuration is applicationContext.xml and beneath of WEB-INF folder. -->
+
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
 	xmlns:context="http://www.springframework.org/schema/context"

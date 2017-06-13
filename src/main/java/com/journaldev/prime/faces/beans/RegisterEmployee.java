@@ -12,6 +12,9 @@ import com.journaldev.spring.service.EmployeeService;
 @ManagedBean
 @SessionScoped
 public class RegisterEmployee {
+	
+//	RegisterEmployee is a faces managed bean that’s used for handling user interaction and 
+//	validation of user’s input.
 
 	@ManagedProperty("#{employeeService}")
 	private EmployeeService employeeService;
@@ -43,3 +46,5 @@ public class RegisterEmployee {
 		return "";
 	}
 }
+
+
