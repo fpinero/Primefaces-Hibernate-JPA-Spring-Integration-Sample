@@ -2,11 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.journaldev</groupId>
-	<artifactId>Primefaces-Hibernate-JPA-Spring-Integration-Sample</artifactId>
+	<artifactId>Primefaces-Hibernate-JPA-Spring-Integration-Sample-MavenUpdated</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Primefaces-Hibernate-JPA-Spring-Integration-Sample Maven Webapp</name>
+	<name>Primefaces-Hibernate-JPA-Spring-Integration-Sample-MavenUpdated</name>
 	<url>http://maven.apache.org</url>
+	
 	<repositories>
 		<repository>
 			<id>prime-repo</id>
@@ -14,12 +15,12 @@
 			<url>http://repository.primefaces.org</url>
 			<layout>default</layout>
 		</repository>
-	</repositories>	
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- Servlet -->
@@ -33,19 +34,19 @@
 		<dependency>
 			<groupId>com.sun.faces</groupId>
 			<artifactId>jsf-impl</artifactId>
-			<version>2.2.4</version>
+			<version>2.2.14</version>
 		</dependency>
 		<!-- Faces Library -->
 		<dependency>
 			<groupId>com.sun.faces</groupId>
 			<artifactId>jsf-api</artifactId>
-			<version>2.2.4</version>
+			<version>2.2.14</version>
 		</dependency>
-		<!-- Primefaces Version 5 -->
+		<!-- Primefaces Version 6.1 -->
 		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
-			<version>5.0</version>
+			<version>6.1</version>
 		</dependency>
 		<!-- JSP Library -->
 		<dependency>
@@ -57,20 +58,20 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
-			<version>1.1.2</version>
+			<version>1.2</version>
 		</dependency>
-		<!-- Hibernate 4.3.6 core library library -->
+		<!-- Hibernate 5.2.10 core library library -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>4.3.6.Final</version>
+			<version>5.2.10.Final</version>
 		</dependency>
 		<!-- Hibernate 4.3.6 JPA support -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
-			<version>4.3.6.Final</version>
-		</dependency>		
+			<version>5.2.10.Final</version>
+		</dependency>
 		<!-- MySQL driver connector library -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -81,29 +82,31 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
-			<version>4.0.3.RELEASE</version>
+			<version>4.3.9.RELEASE</version>
 		</dependency>
 		<!-- Spring Web -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>4.0.3.RELEASE</version>
+			<version>4.3.9.RELEASE</version>
 		</dependency>
 		<!-- Dependencies for Eclipse JPA Persistence API -->
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>eclipselink</artifactId>
-			<version>2.5.0-RC1</version>
-		</dependency> 		
+			<version>2.6.4</version>
+		</dependency>
 	</dependencies>
+	
+	
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>
